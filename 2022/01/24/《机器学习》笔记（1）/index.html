@@ -32,7 +32,7 @@
 <meta property="og:description" content="第一章 绪论">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-01-24T14:32:32.000Z">
-<meta property="article:modified_time" content="2022-01-24T14:46:46.384Z">
+<meta property="article:modified_time" content="2022-01-24T16:22:41.910Z">
 <meta property="article:author" content="LiF">
 <meta property="article:tag" content="Machine Learning">
 <meta property="article:tag" content="AI">
@@ -195,10 +195,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-01-24 22:32:32 / 修改时间：22:46:46" itemprop="dateCreated datePublished" datetime="2022-01-24T22:32:32+08:00">2022-01-24</time>
+              <time title="创建时间：2022-01-24 22:32:32" itemprop="dateCreated datePublished" datetime="2022-01-24T22:32:32+08:00">2022-01-24</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-01-25 00:22:41" itemprop="dateModified" datetime="2022-01-25T00:22:41+08:00">2022-01-25</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -221,18 +227,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="79dbad0f3272ebc5de56dab78cbd1a7a801040f971ea4995b017255146604e97">f62517007cc7bfd7ebd70f266a170ffc03a1be7730ab0fc125915b5bda263b66</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">编写完整后会进行公开</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+        <h1 id="《机器学习》笔记（1）"><a href="#《机器学习》笔记（1）" class="headerlink" title="《机器学习》笔记（1）"></a>《机器学习》笔记（1）</h1><h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h3 id="0-引言"><a href="#0-引言" class="headerlink" title="0. 引言"></a>0. 引言</h3><p>&emsp;&emsp;作为第一篇正式的文章，稍微记录一下动机 （？）<br>&emsp;&emsp;趁假期之际动笔动手搭下博客（夹点私货），顺便管理文献笔记，并督促坚持下去假期的学习与科研计划~</p>
+<p>&emsp;&emsp;本系列笔记是周志华教授《机器学习》（也就是“西瓜书”）的一份个人理解，包含内容：对章节脉络的梳理，较有趣的概念会写一些自己的理解，重要的公式推导会记录心得，其余详细定义便不再赘述（凝练性的笔记罢了，一点点搬运书本时间复杂度太大）。<br>&emsp;&emsp;（另外，其实老早就想把AI基础知识系统补一遍了，开搞！）</p>
+<p>&emsp;&emsp;作为本书的第一章，绪论部分反而更像查漏补缺，绝大部分概念都在之前的research中见过，此处系统进行了归类和给出了定义</p>
+<h3 id="1-术语补充"><a href="#1-术语补充" class="headerlink" title="1. 术语补充"></a>1. 术语补充</h3><h4 id="1-1-样本与属性"><a href="#1-1-样本与属性" class="headerlink" title="1.1 样本与属性"></a>1.1 样本与属性</h4><p>&emsp;&emsp;样本：数据集中的每一个对象<br>&emsp;&emsp;属性：衡量对象某一方面的标准<br>&emsp;&emsp;注：属性又称作<strong>特征</strong>【ps.相比于神经网络提取的深层特征，此处的特征由于直接作用于数据集，所以其实际上是“最浅层”的特征】，全部的属性可以张成一个<strong>n维属性空间（样本空间、输入空间）</strong>，空间中每一个坐标称作一个<strong>特征向量</strong>】</p>
+<h4 id="1-2-假设"><a href="#1-2-假设" class="headerlink" title="1.2 假设"></a>1.2 假设</h4><p>&emsp;&emsp;训练集：训练样本组成的集合<br>&emsp;&emsp;假设：学得模型关于数据的潜在规律【理解：输入到输出的映射关系是唯一确定的（<strong>称为ground_truth</strong>），把<strong>学习过程看做在这个关系所有潜在空间中进行搜索</strong>，搜索到的结果叫做假设（这种思想也有助于理解后面的假设空间）】</p>
+<h4 id="1-3-机器学习的两种基本任务"><a href="#1-3-机器学习的两种基本任务" class="headerlink" title="1.3 机器学习的两种基本任务"></a>1.3 机器学习的两种基本任务</h4><p>&emsp;&emsp;分类&amp;回归问题，前者对应离散数据，后者对应连续数据【此处“数据”均指预测的输出结果】。</p>
+<h4 id="1-4-监督学习和无监督学习"><a href="#1-4-监督学习和无监督学习" class="headerlink" title="1.4 监督学习和无监督学习"></a>1.4 监督学习和无监督学习</h4><p>&emsp;&emsp;差别：有无label</p>
+<h4 id="1-5-泛化"><a href="#1-5-泛化" class="headerlink" title="1.5 泛化"></a>1.5 泛化</h4><p>&emsp;&emsp;泛化能力：适应新样本的能力<br>&emsp;&emsp;注意用分布的思想去看样本空间和假设空间！样本空间是一个未知的分布，泛化能力要求学习时对样本空间充分采样（至少得保证测试集空间和训练集空间一样吧）</p>
+<h3 id="2-假设空间"><a href="#2-假设空间" class="headerlink" title="2. 假设空间"></a>2. 假设空间</h3><p>&emsp;&emsp;和1.2一样，把潜在的模型看成一个分布，分布可能的全体叫做假设空间，学习就是搜索过程（狭义：梯度下降搜索loss的极值；广义：<strong>在假设空间搜索一组参数</strong>）。<br>&emsp;&emsp;<strong>版本空间</strong>：由于数据集大小有限，能在假设空间中找到多个满足训练集分布的解，他们的全体叫做版本空间。</p>
+<h3 id="3-归纳偏好"><a href="#3-归纳偏好" class="headerlink" title="3. 归纳偏好"></a>3. 归纳偏好</h3><p>&emsp;&emsp;意义：从版本空间中找到一个解–学习过程必须带有偏好<br>&emsp;&emsp;一个直观解释：可以用直线、二次曲线、三次曲线等等去连接多个点<br>&emsp;&emsp;小结论：往往选择最简单的那个假设，在设计时通常添加正则项，以提高模型的泛化能力<br>&emsp;&emsp;<strong>补充：NFL问题</strong>：必须针对某一组输入数据（即确定的分布）来评估一个模型的好坏！</p>
+
     </div>
 
     
@@ -314,6 +319,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">《机器学习》笔记（1）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%BB%AA%E8%AE%BA"><span class="nav-number">1.1.</span> <span class="nav-text">第一章 绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-%E5%BC%95%E8%A8%80"><span class="nav-number">1.1.1.</span> <span class="nav-text">0. 引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%9C%AF%E8%AF%AD%E8%A1%A5%E5%85%85"><span class="nav-number">1.1.2.</span> <span class="nav-text">1. 术语补充</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E6%A0%B7%E6%9C%AC%E4%B8%8E%E5%B1%9E%E6%80%A7"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">1.1 样本与属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-%E5%81%87%E8%AE%BE"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">1.2 假设</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%9F%BA%E6%9C%AC%E4%BB%BB%E5%8A%A1"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">1.3 机器学习的两种基本任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E5%92%8C%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.1.2.4.</span> <span class="nav-text">1.4 监督学习和无监督学习</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-%E6%B3%9B%E5%8C%96"><span class="nav-number">1.1.2.5.</span> <span class="nav-text">1.5 泛化</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%81%87%E8%AE%BE%E7%A9%BA%E9%97%B4"><span class="nav-number">1.1.3.</span> <span class="nav-text">2. 假设空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%BD%92%E7%BA%B3%E5%81%8F%E5%A5%BD"><span class="nav-number">1.1.4.</span> <span class="nav-text">3. 归纳偏好</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
