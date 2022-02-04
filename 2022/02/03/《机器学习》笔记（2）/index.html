@@ -24,23 +24,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="进行一个蛋白质设计论文的读">
+  <meta name="description" content="第二章 模型评估与选择">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(2020 PNAS) Neural networks to learn protein sequence-function relationships from deep mutational scanning data">
-<meta property="og:url" content="http://example.com/2022/02/02/Neural-networks-to-learn-protein-sequence-function-relationships-from-deep-mutational-scanning-data/index.html">
+<meta property="og:title" content="《机器学习》笔记（2）">
+<meta property="og:url" content="http://example.com/2022/02/03/%E3%80%8A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/index.html">
 <meta property="og:site_name" content="Setsuna&#39;s Park">
-<meta property="og:description" content="进行一个蛋白质设计论文的读">
+<meta property="og:description" content="第二章 模型评估与选择">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-02-02T14:00:48.000Z">
-<meta property="article:modified_time" content="2022-02-03T12:13:19.289Z">
+<meta property="article:published_time" content="2022-02-03T15:04:06.000Z">
+<meta property="article:modified_time" content="2022-02-04T11:43:15.091Z">
 <meta property="article:author" content="LiF">
 <meta property="article:tag" content="AI">
-<meta property="article:tag" content="AIDD">
-<meta property="article:tag" content="Research">
-<meta property="article:tag" content="Protein Design">
+<meta property="article:tag" content="Lifelong Learning">
+<meta property="article:tag" content="Machine Learning">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/02/02/Neural-networks-to-learn-protein-sequence-function-relationships-from-deep-mutational-scanning-data/">
+<link rel="canonical" href="http://example.com/2022/02/03/%E3%80%8A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/">
 
 
 <script id="page-configurations">
@@ -53,7 +52,7 @@
   };
 </script>
 
-  <title>(2020 PNAS) Neural networks to learn protein sequence-function relationships from deep mutational scanning data | Setsuna's Park</title>
+  <title>《机器学习》笔记（2） | Setsuna's Park</title>
   
 
 
@@ -174,7 +173,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/02/Neural-networks-to-learn-protein-sequence-function-relationships-from-deep-mutational-scanning-data/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/03/%E3%80%8A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/hutao.gif">
@@ -187,7 +186,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          (2020 PNAS) Neural networks to learn protein sequence-function relationships from deep mutational scanning data
+          《机器学习》笔记（2）
         </h1>
 
         <div class="post-meta">
@@ -197,14 +196,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-02-02 22:00:48" itemprop="dateCreated datePublished" datetime="2022-02-02T22:00:48+08:00">2022-02-02</time>
+              <time title="创建时间：2022-02-03 23:04:06" itemprop="dateCreated datePublished" datetime="2022-02-03T23:04:06+08:00">2022-02-03</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-03 20:13:19" itemprop="dateModified" datetime="2022-02-03T20:13:19+08:00">2022-02-03</time>
+                <time title="修改时间：2022-02-04 19:43:15" itemprop="dateModified" datetime="2022-02-04T19:43:15+08:00">2022-02-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -212,12 +211,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Protein-Design/" itemprop="url" rel="index"><span itemprop="name">Protein Design</span></a>
+                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index"><span itemprop="name">Machine Learning</span></a>
                 </span>
             </span>
 
           
-            <div class="post-description">进行一个蛋白质设计论文的读</div>
+            <div class="post-description">第二章 模型评估与选择</div>
 
         </div>
       </header>
@@ -229,7 +228,7 @@
 
       
         <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b702560b7f838ab5808cad053d17492e14feb5a37842a77260ddab8273dc6303">f62517007cc7bfd7ebd70f266a170ffce7c89a3c44ab65bf97febadc0b9b201cc56448d29ec0522a638cc1b254cc9809a53898a31595f1e0e63c69b9821a8756fac70ee9956e2308fb5c25c8131bc8987adfa59f01a3eb7ef46b910e7979884543f8b6de8b8db70b0fdddcc959489accb2d2aee163116a6bdeee78d4a760021c2d6f7b2c17d11f3f515e8e1db0795c65c1013d0888b2f191ca16255818f9e5c70c8267bfdc75b3a7a6bdf411fd1f99722796317a53cbc08e37ea38cbac48210d1e26ec5744d304121cf126e369525c916a784f5b7172e5793a058a8b22906740f7f38f1b0c2cdada4cd0e3cc05623e7c52119368b1fabf37c1417b85226625b70f4dad9ff0ea7a7c4812d8461b468c48f75edff84b9adb7d7d0c05c8586c94e884ffbb47063211d1cea030efcbc1af7fa1ccdf1bb2ebe2d033d4d5e3bf30d752cf00aa794d87150028f4e2d9bc579d3409f835032cca13e98146f51372210e92bdaf709eca4597a4226e1d48987a4f401f0bf9ee1f44701bb26b43bbc7a0613ec7cf28f9d3a894642ec031951ff69588a3358297ab0bc47320a04382974ff33d943071d3755c6c2486e613bc0b727ec41bd2dc3a3dc03c27b94a6ecaded6bf7b3a73597ec13e9098caccb0683f4b3d1e7acd2d14faceeba6dad531cc8d98e144ab6e69fd75d0f81ae7672cc71e5014516d4a0bcdcb8a2fc67b89dd13bc9712752bdbfa1fb2b9fb7297a292525ab185ea5cb9f7bd0f16637e0ef581694a3a201bfc2dcaa2e4da00d61e3788a92de2b2eb2aeecc4785518a215205fc18f77681c7c7095b87493f758f1669f3d88cdc16c8ade31a94353b255ce7619b173f77aa63bdad90385cf3fc659613398a1704639c0fd7845ef7b32ff8a6f3de1593b11412ce73e09f13d066286901548576f7b486ef12fb78c8f209c012ccc6dfe0e005bd57be76a08fd724202cb4613168cd5a5c7ca0f1098c3dcda2e73f6820261042f56eb59a674bf295560766d2b07a82fbe567561a090ec08e05fb1c789d4ed12d70a89770121535d76d6577122b030d80bb0c93392de84e65e5e8be93d5dfe9743429beb5e61e5fb1b4f2e920675198d3968ee34e7295e2aeb7cb13e8d5c84e544fa4986165214aebaff892015652c9dca8ab034f1bf8991571bcb0042b6714635adb72b95443ff30404951bc7678b4ecba98777ab0d59697a9b1bb3234eadf4911869778367061544a857039c9f4d5708a5a3dff45544b49b6e588a17e6082188fcb15c6a1468370d19f34cdfd4fa87b62bfb78403597948b48be5d62624f564a79d6654d16c9223b4827fb714c790edddd7bc0f3d4de78a7bb95a49ba0f99fc7a6a9349c7884d3f9ff32de1b76178ac5da4608fa8058bae6bf8a73fb385e9c35f0d646a103bece4f93c6b7bc9f3f9a4b050a7de8067fa875c5eba763bf608a72fc3493f0b38ef2f5551af24b9c8e9bdeec5dff6a45108ea312922df239eb19f83dd20b20ea436ad6e1747300711c6a8d0ee7bb113c8010fd327ea03b43d2055bf69e3cb3b6dbd08c4e442f41473106d8496f9eb9bb39111f397bd4f7d1db4ff87a84e9dbc8f3a2ea4c5df2b6d72b56c6abbe690145d2655f8a33bcfc412078d4b9a4f97f5e4ee0547d260e595dd7c37c9ce6ea04cb761ed31b4deb3240372ba5463223648b1cf3d9adb5d8939d66be4f6a8891930fe3743003eb0a42ef448324608184435e13698cd2fe8faa161e2f8f6f6f77bab26a64170f58af46215414b0a5a03af756a15e56a3ecdebce25ce12503eeb8a0841c0f787a7ce8425f0eba666c6cd410937cb1a9d7b70571e95c0ffe981e8c50b0981ea8e936fde1acd180e6995eda6f497424bb24b5e271cb7337308507de9f22ee24ad5e9590619f84250d8f422f8934e2f6c785c8c9bfd27bf6f0918710863a724cc02c9b7d94054b73153beb88173795931fe68e7febd03d2fd10f950feec1c2a7de055e39c74681c7125f8ba79f27a33c8dfb702439a2b033d4c67d1337168f50fb4fc8eedfb63aad6ec5f911727a77ccf0d7f1670a8e0e9667ef50db866965263bbed22df5fe4997d3104fbd797898d801187a5e837d434ba1fe5ae30661b8294e60f172836df98e59914fc87980c2f104bada7e91548885df87a1c36d169806d12e4d00200f8c98c1e403ca2673d4658a965680918c3ed8aa1683c381a8b7e18034c05c937d8647d951f73a5a2fd9ad9a686feb7f6ffcff7ea9981d97419f93e2c11024db9fc82786904916eb3dc3999eae0e4ee4ed5f6895a425500c21ea81747528dea6a199e28ad79a0062f8806a53cb23f299d4fc127edcc9a703c4a19a247d6ce3b5f5368c59905eb6951d449774229059af91270304e2382179beb010f05e798e8146b715d37ffa53737170556a1add35f657ecd213b676ae2d324bfbe3eb13567f147115fc896e9861a0ad53a86cc30de2e14b4f93050fae0997d4b2ba5085ff09d9eabd837421ccf7e0ac9350b3b2c30422696ccd679fed7f398b8afc26c0c5414fc0d67b71ce21fe0595a519030b6aa128608d80f80bea99981a3a0cd6200eb73bdfb90516db58fcbdfd7cbdbc5a857a6a2ccc5b5525a2475e95d665d1dc595643dff184317dc4dee2587224f9ba53782ae9cda6d467253c1b3e309b1b9fe2c2950912a056e4060f89f656147d871cc2a6db88fbfa730319b9011e6b05af802c2fb78cd21b5a93a3e1b8675fde84cbc807c04379d659e4cf177eed605390e5fe03afada90ad7699f0ad88a6d8256af3345d3d2f3d5e5a3d11e45a5bf8e04420d7517d8bbc052a956955ba46c92b5009136b19851c4083657ad666e7262d1015be6499cff9390c502840dba0ce10689134ea395704ba9e28637a85b2302fa2ab36ed5d47395d83b7096e8740838e75376a1ec99a09a8a04867e9a19672fcc0ab5a22682e8d8f7c4253cb3ef17c3b96ec36ed88f84597f839a974df8144c11e546fd45ae2fcdda6e7471f5af9b141d0ce0f084945f4ac9f4a978be1e02512e610e23bfd7aab180c4d95865556e9cadc09a8ddd39d2b4f5d98365369fa8adcbed92f3a29e74fe94f5d8451f5d50816e920f11fd77ff3a8a711d227001b9991eba677fb8300093ac35c97fa1e07d3aed9f1868540973d</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="ba5d5b3587d8e4e4f4d0ca544b4bdcc5d5b780a2265f5d2260d95a89a527f8c1">f62517007cc7bfd7ebd70f266a170ffc7f0040ff86ec7d2043b2c185dae08df9961c61c585d102eab0672e1cc4dc39642b32fbf323ef4503a99cb0e665433f12434be80b181a0c6c10a8e22f744d3c3fd954a8de3edd031c665a0af65d31f115b2b788a7e2dbfad91dcd726cdb3f46fd646053d290b0f02bace100f52dbb0f8eb04754c406cc749088c19587824610c7f5c9bf6f4dd3ddeffe37ec256c3726b4b192b0e3b6f8ad9f46f8c0ac86d7f4a2155352cde7eafe7b41facdac8aa0a2bcf58f63c434723896bb812abf6f1bac57950e7e986fe4524b512f20bf0e23779b0b9f2ea3022e186fab3a1bfd5cfe2c71c852be2f521b9b6f1df4888b2f5ebf3398de82dc178dcb7e29d80a4d6e4415979d419bb6de69338a98f17103580dbaa9f950b9844b349f02463bbf0ecceb1cb2248363d123c33e1aff6731662c1f5c45f1a46f4e5e3fd08853cf1b67ac34643fa7a2625b8772be31c25fcde76ac2baeee39a659ab5f30a9a5b4a9478b8cb4463f6f2e8220d17574b483663f0f51363c204d807acd3046d7a06ad4960e92b520cc5ac41afe9feca398ae25e43b704b988bd07011b4ed6d8d0c2d6701b647f3955379418f7f7e1c58d2f0144a4e946b5e6a49025870e89812adfd34d5755c59e4cfbd793f3d6edba3815dba78a672d3100423af8f150d54fef5109c07a9d460c4bd854dde9370f2056b4efb6291a8fd6e307f06f1382248df01ca42b9b43dcd71b9dae95f8b03da5b59a4f73982d73ec7037f74cf0358188a0597a335be15b758e4117f858f2a394d32d82671bcbb3e51287acb8ac228e21c0a8d6c8b2d1ec88d1b4e7d595b7933f62230a1bc5e9eb46c0c3d5e90976a26df791c6a83614ec1eb7f5a7747a95409ef73644446ab1b023f20d13870bb24ee078e308b00872f86634a27e972266e6e77dab17aa1539574ab9876e4ae3d219f8f7530d83693db1aec8a42be54d40ff5a30e7da9bab5084b4e983fb489f980d90d025748b4317d88ae6c6ef6a5be67551ddffc48303258c6001470fc2550b4a144b95556386c4d8d1821bdb8fac18f9b35aa9f771f910db9ebc7c24e89f7f86c7c1cf6a159708a2661cf922aaaaed60ef9d79ec0e5212ae2b05bca5e89c5cb07e296fbce1ff50eca1abf52c1c78a22a58b0c9fd21502ad70d045b10bff2a3b7498a66286dec77945cf8296fdaac5a4146597c4583cddd31f76887476d468de43427bd4221007c8a70b97766141803dc97130c68b34d1e8ffa2dacaa752f762bc10911937cd6feb74796d84fbc5a4f15cab1c867780e374b5a30bf5d64505cb408f9f1c94003f2d5670b3cf8584c797114e7393336d3cac5c18f117c423e7d6be70a6b155f3d6e591d83b93afc207856da66587478376eb6d4cb34e006e6d09cb39029cb84cdb5de58bf7e015cff67beed45d5fec230305f958c3acfe373e965022a62f14d47d7abe203bc3b6930f07b01c50ecbb70687c15bd5cec5d10214e99700be468c1794b64f0f55b486239bb46bd22540993bd20e434279e04c2e877ed486c53012df87b3bd86265446ea4ad2bf58a6681cc342ec09e591ddfdbbeb3aba031c0997cfd90fe1c77ea1721bb803734b0dc6ccd57b6e8e76ede72df5c73f6f206260dad56b3516f195032880573ab926be9fe3000358d54d6653c52eaeebe02cba44729664a47466992a6be44154b68491eebe479181b885bb905e55febf79162222dfabe130e5a158d111935c4855b31e0e5985cbdbcdb86ff21ae5a0e97045912b3e32b3fb797958559fddb96f21d4b434071fea113c01adf917525a8bb785317968ddef5600c5050b9b364e186be3e064220c45acbf91892b38b937fa175ceefd0461974bd5768a8bda616c46c41fb76b28f74892fb952e6b8221c30dc90ef44a6ad3b1f3f6ca1fdba48835e0d86c2b8fd9dc57d722c07b9a96c60765dcf4e4d12603721aec5f41016850aab7d4862ff437dd47e0e6df0305e002c26c5a1d2fcae0885769887063e2d082b298199f7272ca3636745a913b3851014449a24add2441e10b73e40f4b841dfb96389794b3cdf0ffce94806efa39c75e7f089d80b55e00dda5ce37a279949dfbc0bf74c1cde8acdd56d697b0c0b4084fb062a990e84136413a77aa532ece42c1d47fd14a183ff04a52f7ba711aaf402ff3478a3a238bbebe7da15cfc71248864a228d912b39da289e5756f800b891a36ecf884acb51ebcc4755417bb14c92aa40303aee33c1c0d4b669f5ebba10f0568f40763de57c9130100a49d28bad8a9a3ae1a6f5ae06bed045db6972f688bbab07f6c0387d86d5f967a2934d4d72a1cb8c2e0524f78f14f6172e5ebcae3febad8833db43eb7c29686699e0cfb7241a648f3c5df8990d1dd2d4199b65ae2270f4b5850339566064155f395c2eaa9fec18cbb7a2c4d25c8d61c44cf2ba4fe914ab06ce23b0ea8d47236c5aa44b080a9a0c33c190db85d1f754e1b3c1d35a208364a54eee3fd959215ffe25e01d2da41e5930a91f83a6077b8294215fc7ed8ed8e0698abc519c7094dda4041a4b2641c4ee55e4bbd2aa79658821b900b2497366a9a8cd7bcc7167f7dd814a80e68d1cb25c40b76966c1b9ca0aa259e729cd98f0376aa050d5e463e4d37964bc6da58a80357d7d3e0dc67c152874d7320ecbe69481d55ad511c6333467ee26ace145f22138ded8a3d612c7b8cb44c265cb62f1fc83a4d05929ff7872ee4fdfdf7edda3446a271bc7b8657e0b22f77c9125da615da006325a4fa2c89e08eb28935a6ab71e90fa93dde540f7a0bc84938328a2e72f0ef88dfb7f11f1720771279d245284c71ae4e15add108f2b29fea045733253c8f506365e04322b5d19c13fd512c7f700da3dfa3f743cbba138ee0f6b4225676e131c23edddd2f3babc45e5d2e719cb9ed40107bab85fb17a33fa647889e1471b71558dc1456ff28323982c5eacccee14bc66d2a9c5e1137ce8475c780db27be44348f337aae474734bbd3941fcd8b6f301ee46fc719dec32aba5a0ce344a9d9d53f7a7f52b7c352da4a8e95e8d643d6548239794fa7191b462d22b1eae4a9cd8e9de4d7bc6ba8d6bed88bd80c9d322caacd4af323c36176f709dc724e48bcd6709c74b4ed2022862091d0d5de1a905096ca3e6adacb27da839d844b96b26ee1880ddcba58c265aedc3a8e9548791e949e789d7b8225a906e128a978dde5aaa73965a492199ff0376d6d97b88525995c6e9abc19d7b1f460b842ccfab6c9fa0575e002d7a4bde2bac04cb0566fb8354377a8605c7c6689d33a20c3e16e02d57b48f7dda299a2617269b787d723e320126a365cddc613b24bac603525ae36b0813ab753b95538ae275edbf78a964daf5cc861561317406896fef390b88b12f81a55d357c8d7aff01bbfee3b1d9790e2f70afb67c0ff88c0730f3c06b7957897b99a0df3b70f8ddedeba6063469556c667fdfcb78d9cd23ad50fddadc71f81d8839ac086369ae77ed045adfde86d3c6f1dfb056c47f0d880f90568f447dd2e53c99cf27a524438f0fd43c03f825ee95105f7134865bf73fd2d6f43e20ee6df2cc61cd1a0d31b327c7d47c73c840e1c1539d58eaea1e33c183b2de0baa49beb4879e61cfce30189abcde9f086aab423f2c00698f4c611aa65ee47be62597b1134b43611890381d284c5dcef1e5c05785e0d1cd1e06f9e78dbdf7f12272da04ea6f8f47fdd725fa45004e4261049840a1f506cdd77e25ccbb301a11d1eb6212288a4b57e3679712b2343ab3601c059082a978353058193c9642d0fb5895b227f4b358a37febff70239eacc388fd8a6931db19c13ea4591ec1bb7ac50490883053dea68519714d45a4311aebec9120e283e0b2610173de4f7d8ef4b85ba6002f9bd0f8c499de428fda8147ae229a5ed9c6c2574e3218817e00f16ea0b49727887cdb4abe61bc64ae495f5d6229f82dc6b28351e7d93c4b23d465a612be0850f56cb045c505b369a6ad1b080c183e0a2980653dfe20b79bb7c2a50ad94aee64c12eb83d4f79de25332a522e3e663f6065c8bf52003cd79a66ad812255802f86a4b41a0352f321a082a1cf24a1d834840bf0a9454cdac20f3b15a4ae02f77a58a48f990f42a6e0e8b88232c73170b845b09950ce3fea73d34923894fa2329396d9bd219c6fe6559384dceefcc72d2d94d9d99abc86641b233b142bb108806a3a3b8b29f6db06560b5ea9a227c356742021c7ed79ac7d0e0805cb931c9baf75084aa5c03faf38f2833e0cc66b22ee8845f13d914015dd89467067f24c65af83b576354a15ad1c62cb544e082128c250eadea58054cf1b0e9a8ffa5e22dc75dde6c801fe08e8906b2b6a9bb5558d7444e9dd83b565f7a589e30a4d7b9063a372e7699c3339be6a222ff103d393839405396e63797d4f1bb9816a58944de56df966597e6f7ee0e65feedb8929c1be6abd6874cdf448457fc6581d39ca60926e7ebe6aebd6ea01077ec9fe0c4124d68d7de85dc73d1c859d84a6f76079d6d11a677e7185a992dcd996f2776c52912ac19d6bdbc1011924faaab8e6678aee1188c4dbcf8254916571b88aaa9fe8f3b94ee0e43749fa04e6375cfe9f27c83ed2ec6809e356c3b2143d470f5f4b83b54ccdf09a19c9a13207b81f96d0d81d2c59eee372ca7d3833378e0ceb5052e65b767420b52f2f523c67492a56b00c78a473121466fc148ab9e0a8adeb5ff7d8f4fb2a6599f770d9768a0be1859979bf92104ee8bd144232ab694ccf0668c109ed79bbffc981bc1dcc9bae3d6244f17d1e8a67a30b735630e025b623fa29414aa6ab200c89cb0cc39cc7c836820a09bc3dc85ff2ca0d58ace35df4a43ae07688028d1a423f96f1350a9b1403ed9ba3ec026bd4abe93babc856c8b5eb67eeee15d0f45292e29c9cf953f35b2a36ffd75789ff9b3ff19233a2ae12df2a655017193409cc46a52b4</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -249,9 +248,8 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/AI/" rel="tag"># AI</a>
-              <a href="/tags/AIDD/" rel="tag"># AIDD</a>
-              <a href="/tags/Research/" rel="tag"># Research</a>
-              <a href="/tags/Protein-Design/" rel="tag"># Protein Design</a>
+              <a href="/tags/Lifelong-Learning/" rel="tag"># Lifelong Learning</a>
+              <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
           </div>
 
         
@@ -260,13 +258,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/01/30/Flow-based-Generative-Model/" rel="prev" title="Flow-based Generative Models">
-      <i class="fa fa-chevron-left"></i> Flow-based Generative Models
+    <a href="/2022/02/02/Neural-networks-to-learn-protein-sequence-function-relationships-from-deep-mutational-scanning-data/" rel="prev" title="(2020 PNAS) Neural networks to learn protein sequence-function relationships from deep mutational scanning data">
+      <i class="fa fa-chevron-left"></i> (2020 PNAS) Neural networks to learn protein sequence-function relationships from deep mutational scanning data
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/02/03/%E3%80%8A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/" rel="next" title="《机器学习》笔记（2）">
-      《机器学习》笔记（2） <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
