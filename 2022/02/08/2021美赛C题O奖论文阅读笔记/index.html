@@ -24,23 +24,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="进行一个蛋白质设计论文的读">
+  <meta name="description" content="2021年美赛C题O奖论文集阅读笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(2020 PNAS) Neural networks to learn protein sequence-function relationships from deep mutational scanning data">
-<meta property="og:url" content="http://example.com/2022/02/02/Neural-networks-to-learn-protein-sequence-function-relationships-from-deep-mutational-scanning-data/index.html">
+<meta property="og:title" content="2021美赛C题O奖论文阅读笔记">
+<meta property="og:url" content="http://example.com/2022/02/08/2021%E7%BE%8E%E8%B5%9BC%E9%A2%98O%E5%A5%96%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Setsuna&#39;s Park">
-<meta property="og:description" content="进行一个蛋白质设计论文的读">
+<meta property="og:description" content="2021年美赛C题O奖论文集阅读笔记">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-02-02T14:00:48.000Z">
-<meta property="article:modified_time" content="2022-02-03T12:13:19.289Z">
+<meta property="article:published_time" content="2022-02-08T14:08:32.000Z">
+<meta property="article:modified_time" content="2022-02-08T14:08:52.163Z">
 <meta property="article:author" content="LiF">
-<meta property="article:tag" content="AI">
-<meta property="article:tag" content="AIDD">
-<meta property="article:tag" content="Research">
-<meta property="article:tag" content="Protein Design">
+<meta property="article:tag" content="Math Modeling">
+<meta property="article:tag" content="MCM">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/02/02/Neural-networks-to-learn-protein-sequence-function-relationships-from-deep-mutational-scanning-data/">
+<link rel="canonical" href="http://example.com/2022/02/08/2021%E7%BE%8E%E8%B5%9BC%E9%A2%98O%E5%A5%96%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -53,7 +51,7 @@
   };
 </script>
 
-  <title>(2020 PNAS) Neural networks to learn protein sequence-function relationships from deep mutational scanning data | Setsuna's Park</title>
+  <title>2021美赛C题O奖论文阅读笔记 | Setsuna's Park</title>
   
 
 
@@ -174,7 +172,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/02/Neural-networks-to-learn-protein-sequence-function-relationships-from-deep-mutational-scanning-data/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/08/2021%E7%BE%8E%E8%B5%9BC%E9%A2%98O%E5%A5%96%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/hutao.gif">
@@ -187,7 +185,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          (2020 PNAS) Neural networks to learn protein sequence-function relationships from deep mutational scanning data
+          2021美赛C题O奖论文阅读笔记
         </h1>
 
         <div class="post-meta">
@@ -196,28 +194,22 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-02-02 22:00:48" itemprop="dateCreated datePublished" datetime="2022-02-02T22:00:48+08:00">2022-02-02</time>
+              <time title="创建时间：2022-02-08 22:08:32 / 修改时间：22:08:52" itemprop="dateCreated datePublished" datetime="2022-02-08T22:08:32+08:00">2022-02-08</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-03 20:13:19" itemprop="dateModified" datetime="2022-02-03T20:13:19+08:00">2022-02-03</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Protein-Design/" itemprop="url" rel="index"><span itemprop="name">Protein Design</span></a>
+                  <a href="/categories/Math-Modeling/" itemprop="url" rel="index"><span itemprop="name">Math Modeling</span></a>
                 </span>
             </span>
 
           
-            <div class="post-description">进行一个蛋白质设计论文的读</div>
+            <div class="post-description">2021年美赛C题O奖论文集阅读笔记</div>
 
         </div>
       </header>
@@ -229,7 +221,7 @@
 
       
         <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b702560b7f838ab5808cad053d17492e14feb5a37842a77260ddab8273dc6303">f62517007cc7bfd7ebd70f266a170ffce7c89a3c44ab65bf97febadc0b9b201cc56448d29ec0522a638cc1b254cc9809a53898a31595f1e0e63c69b9821a8756fac70ee9956e2308fb5c25c8131bc8987adfa59f01a3eb7ef46b910e7979884543f8b6de8b8db70b0fdddcc959489accb2d2aee163116a6bdeee78d4a760021c2d6f7b2c17d11f3f515e8e1db0795c65c1013d0888b2f191ca16255818f9e5c70c8267bfdc75b3a7a6bdf411fd1f99722796317a53cbc08e37ea38cbac48210d1e26ec5744d304121cf126e369525c916a784f5b7172e5793a058a8b22906740f7f38f1b0c2cdada4cd0e3cc05623e7c52119368b1fabf37c1417b85226625b70f4dad9ff0ea7a7c4812d8461b468c48f75edff84b9adb7d7d0c05c8586c94e884ffbb47063211d1cea030efcbc1af7fa1ccdf1bb2ebe2d033d4d5e3bf30d752cf00aa794d87150028f4e2d9bc579d3409f835032cca13e98146f51372210e92bdaf709eca4597a4226e1d48987a4f401f0bf9ee1f44701bb26b43bbc7a0613ec7cf28f9d3a894642ec031951ff69588a3358297ab0bc47320a04382974ff33d943071d3755c6c2486e613bc0b727ec41bd2dc3a3dc03c27b94a6ecaded6bf7b3a73597ec13e9098caccb0683f4b3d1e7acd2d14faceeba6dad531cc8d98e144ab6e69fd75d0f81ae7672cc71e5014516d4a0bcdcb8a2fc67b89dd13bc9712752bdbfa1fb2b9fb7297a292525ab185ea5cb9f7bd0f16637e0ef581694a3a201bfc2dcaa2e4da00d61e3788a92de2b2eb2aeecc4785518a215205fc18f77681c7c7095b87493f758f1669f3d88cdc16c8ade31a94353b255ce7619b173f77aa63bdad90385cf3fc659613398a1704639c0fd7845ef7b32ff8a6f3de1593b11412ce73e09f13d066286901548576f7b486ef12fb78c8f209c012ccc6dfe0e005bd57be76a08fd724202cb4613168cd5a5c7ca0f1098c3dcda2e73f6820261042f56eb59a674bf295560766d2b07a82fbe567561a090ec08e05fb1c789d4ed12d70a89770121535d76d6577122b030d80bb0c93392de84e65e5e8be93d5dfe9743429beb5e61e5fb1b4f2e920675198d3968ee34e7295e2aeb7cb13e8d5c84e544fa4986165214aebaff892015652c9dca8ab034f1bf8991571bcb0042b6714635adb72b95443ff30404951bc7678b4ecba98777ab0d59697a9b1bb3234eadf4911869778367061544a857039c9f4d5708a5a3dff45544b49b6e588a17e6082188fcb15c6a1468370d19f34cdfd4fa87b62bfb78403597948b48be5d62624f564a79d6654d16c9223b4827fb714c790edddd7bc0f3d4de78a7bb95a49ba0f99fc7a6a9349c7884d3f9ff32de1b76178ac5da4608fa8058bae6bf8a73fb385e9c35f0d646a103bece4f93c6b7bc9f3f9a4b050a7de8067fa875c5eba763bf608a72fc3493f0b38ef2f5551af24b9c8e9bdeec5dff6a45108ea312922df239eb19f83dd20b20ea436ad6e1747300711c6a8d0ee7bb113c8010fd327ea03b43d2055bf69e3cb3b6dbd08c4e442f41473106d8496f9eb9bb39111f397bd4f7d1db4ff87a84e9dbc8f3a2ea4c5df2b6d72b56c6abbe690145d2655f8a33bcfc412078d4b9a4f97f5e4ee0547d260e595dd7c37c9ce6ea04cb761ed31b4deb3240372ba5463223648b1cf3d9adb5d8939d66be4f6a8891930fe3743003eb0a42ef448324608184435e13698cd2fe8faa161e2f8f6f6f77bab26a64170f58af46215414b0a5a03af756a15e56a3ecdebce25ce12503eeb8a0841c0f787a7ce8425f0eba666c6cd410937cb1a9d7b70571e95c0ffe981e8c50b0981ea8e936fde1acd180e6995eda6f497424bb24b5e271cb7337308507de9f22ee24ad5e9590619f84250d8f422f8934e2f6c785c8c9bfd27bf6f0918710863a724cc02c9b7d94054b73153beb88173795931fe68e7febd03d2fd10f950feec1c2a7de055e39c74681c7125f8ba79f27a33c8dfb702439a2b033d4c67d1337168f50fb4fc8eedfb63aad6ec5f911727a77ccf0d7f1670a8e0e9667ef50db866965263bbed22df5fe4997d3104fbd797898d801187a5e837d434ba1fe5ae30661b8294e60f172836df98e59914fc87980c2f104bada7e91548885df87a1c36d169806d12e4d00200f8c98c1e403ca2673d4658a965680918c3ed8aa1683c381a8b7e18034c05c937d8647d951f73a5a2fd9ad9a686feb7f6ffcff7ea9981d97419f93e2c11024db9fc82786904916eb3dc3999eae0e4ee4ed5f6895a425500c21ea81747528dea6a199e28ad79a0062f8806a53cb23f299d4fc127edcc9a703c4a19a247d6ce3b5f5368c59905eb6951d449774229059af91270304e2382179beb010f05e798e8146b715d37ffa53737170556a1add35f657ecd213b676ae2d324bfbe3eb13567f147115fc896e9861a0ad53a86cc30de2e14b4f93050fae0997d4b2ba5085ff09d9eabd837421ccf7e0ac9350b3b2c30422696ccd679fed7f398b8afc26c0c5414fc0d67b71ce21fe0595a519030b6aa128608d80f80bea99981a3a0cd6200eb73bdfb90516db58fcbdfd7cbdbc5a857a6a2ccc5b5525a2475e95d665d1dc595643dff184317dc4dee2587224f9ba53782ae9cda6d467253c1b3e309b1b9fe2c2950912a056e4060f89f656147d871cc2a6db88fbfa730319b9011e6b05af802c2fb78cd21b5a93a3e1b8675fde84cbc807c04379d659e4cf177eed605390e5fe03afada90ad7699f0ad88a6d8256af3345d3d2f3d5e5a3d11e45a5bf8e04420d7517d8bbc052a956955ba46c92b5009136b19851c4083657ad666e7262d1015be6499cff9390c502840dba0ce10689134ea395704ba9e28637a85b2302fa2ab36ed5d47395d83b7096e8740838e75376a1ec99a09a8a04867e9a19672fcc0ab5a22682e8d8f7c4253cb3ef17c3b96ec36ed88f84597f839a974df8144c11e546fd45ae2fcdda6e7471f5af9b141d0ce0f084945f4ac9f4a978be1e02512e610e23bfd7aab180c4d95865556e9cadc09a8ddd39d2b4f5d98365369fa8adcbed92f3a29e74fe94f5d8451f5d50816e920f11fd77ff3a8a711d227001b9991eba677fb8300093ac35c97fa1e07d3aed9f1868540973d</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="79dbad0f3272ebc5de56dab78cbd1a7a801040f971ea4995b017255146604e97">f62517007cc7bfd7ebd70f266a170ffc03a1be7730ab0fc125915b5bda263b66</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -248,10 +240,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/AI/" rel="tag"># AI</a>
-              <a href="/tags/AIDD/" rel="tag"># AIDD</a>
-              <a href="/tags/Research/" rel="tag"># Research</a>
-              <a href="/tags/Protein-Design/" rel="tag"># Protein Design</a>
+              <a href="/tags/Math-Modeling/" rel="tag"># Math Modeling</a>
+              <a href="/tags/MCM/" rel="tag"># MCM</a>
           </div>
 
         
@@ -260,13 +250,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/01/30/Flow-based-Generative-Model/" rel="prev" title="Flow-based Generative Models">
-      <i class="fa fa-chevron-left"></i> Flow-based Generative Models
+    <a href="/2022/02/08/%E7%A7%91%E7%9B%AE%E4%B8%89%E8%80%83%E8%AF%95%E8%A6%81%E9%A2%86/" rel="prev" title="科目三考试要领">
+      <i class="fa fa-chevron-left"></i> 科目三考试要领
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/02/03/%E3%80%8A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/" rel="next" title="《机器学习》笔记（2）">
-      《机器学习》笔记（2） <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -441,59 +428,6 @@
   
 
   
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
