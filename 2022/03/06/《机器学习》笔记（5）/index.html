@@ -24,14 +24,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="第五章 神经网络">
+<meta property="og:type" content="article">
 <meta property="og:title" content="《机器学习》笔记（5）">
 <meta property="og:url" content="http://example.com/2022/03/06/%E3%80%8A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%885%EF%BC%89/index.html">
 <meta property="og:site_name" content="Setsuna&#39;s Park">
+<meta property="og:description" content="第五章 神经网络">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-06T03:17:32.000Z">
-<meta property="article:modified_time" content="2022-03-06T03:17:32.402Z">
+<meta property="article:modified_time" content="2022-03-06T03:36:03.083Z">
 <meta property="article:author" content="LiF">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="Lifelong Learning">
+<meta property="article:tag" content="Machine Learning">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/2022/03/06/%E3%80%8A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%8B%E7%AC%94%E8%AE%B0%EF%BC%885%EF%BC%89/">
@@ -190,11 +195,22 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-03-06 11:17:32" itemprop="dateCreated datePublished" datetime="2022-03-06T11:17:32+08:00">2022-03-06</time>
+              <time title="创建时间：2022-03-06 11:17:32 / 修改时间：11:36:03" itemprop="dateCreated datePublished" datetime="2022-03-06T11:17:32+08:00">2022-03-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index"><span itemprop="name">Machine Learning</span></a>
+                </span>
             </span>
 
           
+            <div class="post-description">第五章 神经网络</div>
 
         </div>
       </header>
@@ -205,7 +221,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="3cd96365f3a323a0df56576273c6257fce1f0adf925e10cdc12e32e70d7a1635">f62517007cc7bfd7ebd70f266a170ffce7c89a3c44ab65bf97febadc0b9b201c6aade5b7e93158422bc8251f61a43482639475c868cd9de086be4394c3c228ffcae943bcc72ee41b938bfb9f725ad487003353b7013199d2a08a815a11eefc3924773bcb037d2d2c9b6e2440d1816888300bedea3f3262a852af3c9276557eb43c1ebcd78ffdb72399a6a032af466fcddee3c0d6b6bd7f592f572f4eb9e83e906546e8ec643f2900c1812d2b85d641bed2f94b244385fbc766754a82209107b300e17ff7f8d29e543110db68449302cb38f6b37625f5d5077d04cf6c3a8f917eb04be49c68efca52db24affaf074a4ff9b6cbfb26c9b3499ae72f5488d4a9c5f11261da0adcdb5522318567fd7eedcb3a2ee579d88b4e0c05b73f8195e1621b5496d3b510cde09b3dd7f28226271fac9d90a190fb7d36c4e18b672e1c8a48d952fe499f18b307c5acbeb279e25629de2479c837f08697cec47337601f27f84d997dd99741745f8d38f9284b6d54c6c9aa561ce841ab2e79fabb7efb5dc113751fd666e0514c7f7cfa292e533248fa818879e8f80ecde92802d32cab68ad6963d2619b97f49e1ba0edb1dab4bda1ae0570f8c3afb69093721b67a8b851cb9e5649ecca5c1c14c304d3ecb9711a7176e7e5bd20590b986d19a87cc6516e3816cd2dfbe97a4535dac9a9eccb6c45cd3cefd95a3c1195b4dab4f56587e66fddeab4e22c199000ec1aafded9ce080cd6a08e720d7ab7d651f4a49ce72395a9a26f742aeb6e33becb66acb72f5d478c1dbf0ed76a2d30a6a14402499eccefe7ecd9f88862cd043c2889b6dbbfe144a9ae8b81b705d64f2b046f521790bea31daf0ca3c6464870fe73bb444f6baafbad1e5ac3cdd94fc0f9fd065ea408728f39068565a44fe67b2e6016e7c07983ed43c1fb69c978bc4375595808ba305337f36d49cbea8624fa5413bdefa0c15b440a365c3ff76011441c8bf30fa900d5703fcc84f3b902b7d04c9a2028a4797e1efde3e751fea5b5aeea0c900ca158d5216708859661e1337fbe28a5e2ea8df570cee658d5213f3cd63d75d9f5549a01db68f0d5784a491c3dbdbff18e503d742247adef5cbe3097d343bf3ff906a8b3c6109df228ac3a71b87724b66851d3b62a4e6695af5478165a5832edf409adb1f253cec732185f67f79d504f2532c097d708bd8235786184ac6c250714830f6ff13e8234688d4cb188593bae5ea5da200c3528a79b9db707285b1d0c3cbdfd61fd4f83fd2d7ac5e7517596fdfb5372949d7a1852f03962a28cae43a4eb5b0298fc18e1609bd</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">编写完整后会进行公开</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
     </div>
 
     
@@ -213,6 +240,11 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AI/" rel="tag"># AI</a>
+              <a href="/tags/Lifelong-Learning/" rel="tag"># Lifelong Learning</a>
+              <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+          </div>
 
         
 
@@ -398,6 +430,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
